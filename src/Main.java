@@ -49,6 +49,6 @@ public class Main
         System.out.println("Всего работников в компании "+(allHours/hoursPerPerson)+" человек");
         System.out.println("Вариант 2");
         var more = 94;
-        System.out.println("Если в компании работает "+((allHours/hoursPerPerson)+more)+" человек, то всего "+(((allHours/hoursPerPerson)+more)*hoursPerPerson)+" часа работы можеть быть поделено между сотрудниками");
+        System.out.println(" Если в компании работает "+((allHours/hoursPerPerson)+more)+" человек, то всего "+(((allHours/hoursPerPerson)+more)*hoursPerPerson)+" часа работы можеть быть поделено между сотрудниками");
         }
 }
