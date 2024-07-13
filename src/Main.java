@@ -43,5 +43,38 @@ public class Main {
         System.out.println(" ");
         System.out.println("Задание 4:");
         System.out.println(" ");
+        byte bottleMinute = 8;
+        byte oneTime = 20;
+        short day = 60*24;
+        short treeDays = 60*24*3;
+        int oneMonth = 60*24*30;
+        System.out.println("За 20 минут машина произвела "+bottleMinute*oneTime+" штук бутылок.");
+        System.out.println("За сутки машина произвела "+bottleMinute*day+" штук бутылок.");
+        System.out.println("За 3 дня машина произвела "+bottleMinute*treeDays+" штук бутылок.");
+        System.out.println("За 1 месяц машина произвела "+bottleMinute+oneMonth+" штук бутылок.");
+        System.out.println(" ");
+        System.out.println("Задача 5");
+        System.out.println(" ");
+        byte cans = 120;
+        byte cansWhite = 2;
+        byte cansBrown = 4;
+        System.out.println("В школе, где "+cans/(cansWhite+cansBrown)+" классов, нужно "+(cans/(cansWhite+cansBrown))*cansWhite+" банок белой краски и "+(cans/(cansWhite+cansBrown))*cansBrown+" банок коричневой краски.");
+        System.out.println(" ");
+        System.out.println("Задача 6");
+        System.out.println(" ");
+        byte bananas = 5;
+        byte weightBanana = 80;
+        short milk = 105;
+        byte portionMilk = 2;
+        byte iceCream = 2;
+        byte weightIceCream = 100;
+        byte egg = 4;
+        byte weightEgg = 70;
+        float kG = (bananas*weightBanana+milk*portionMilk+iceCream*weightIceCream+egg*weightEgg)/1000F;
+        System.out.println("Вес завтрака составляет "+(bananas*weightBanana+milk*portionMilk+iceCream*weightIceCream+egg*weightEgg)+" грамм, или "+kG+" килограмм.");
+        System.out.println(" ");
+        System.out.println("Задача 7");
+        System.out.println(" ");
+
     }
 }
