@@ -70,11 +70,29 @@ public class Main {
         byte weightIceCream = 100;
         byte egg = 4;
         byte weightEgg = 70;
-        float kG = (bananas*weightBanana+milk*portionMilk+iceCream*weightIceCream+egg*weightEgg)/1000F;
+        float kG = (weightBanana * bananas + milk * portionMilk + iceCream * weightIceCream + egg * weightEgg)/1000F;
         System.out.println("Вес завтрака составляет "+(bananas*weightBanana+milk*portionMilk+iceCream*weightIceCream+egg*weightEgg)+" грамм, или "+kG+" килограмм.");
         System.out.println(" ");
         System.out.println("Задача 7");
         System.out.println(" ");
+        short weightAllKG = 7;
+        short weightOne = 250;
+        short weightTwo = 500;
+        short weightAllGr = (short) (weightAllKG*1000);
+        System.out.println(weightAllGr/weightOne+" дней необходимо, при похудении на "+weightOne+" граммов в день.");
+        System.out.println(weightAllGr/weightTwo+" дней необходимо, при похудении на "+weightTwo+" граммов в день.");
+        System.out.println((weightAllGr/weightOne+weightAllGr/weightTwo)/2+" дней необходимо в среднем для похудения");
+        System.out.println(" ");
+        System.out.println("Задание 8");
+        System.out.println(" ");
+        int Masha = 67760;
+        int Denis = 83690;
+        int Kristina = 76230;
+        float percent = 10/100f;
+        byte year =12;
+        System.out.println("Маша теперь получает "+(Masha + (Masha*percent))+" рублей. Годовой доход вырос на "+Masha*percent*year+" рублей.");
+        System.out.println("Денис теперь получает "+(Denis + (Denis*percent))+" Рублей. Годовой доход вырос на "+Denis*percent*year+" рублей.");
+        System.out.println("Кристина теперь получает "+(Kristina + (Kristina*percent))+" рублей. Годовой доход звырос на "+Kristina*percent*year+" рублей.");
 
     }
 }
