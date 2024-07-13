@@ -39,7 +39,7 @@ public class Main {
         byte ThreeByte = 30;
         short allPaper = 480;
         System.out.println("480/(23+27+30) = 6");
-        System.out.println("На каждого ученика рассчитано "+(allPaper/(OneByte+TwoByte+ThreeByte))+" листов бумаги. ");
+        System.out.println("На каждого ученика рассчитано "+(allPaper/(OneByte + TwoByte + ThreeByte))+" листов бумаги. ");
         System.out.println(" ");
         System.out.println("Задание 4:");
         System.out.println(" ");
@@ -48,17 +48,17 @@ public class Main {
         short day = 60*24;
         short treeDays = 60*24*3;
         int oneMonth = 60*24*30;
-        System.out.println("За 20 минут машина произвела "+bottleMinute*oneTime+" штук бутылок.");
-        System.out.println("За сутки машина произвела "+bottleMinute*day+" штук бутылок.");
-        System.out.println("За 3 дня машина произвела "+bottleMinute*treeDays+" штук бутылок.");
-        System.out.println("За 1 месяц машина произвела "+bottleMinute+oneMonth+" штук бутылок.");
+        System.out.println("За 20 минут машина произвела "+bottleMinute * oneTime+" штук бутылок.");
+        System.out.println("За сутки машина произвела "+bottleMinute * day+" штук бутылок.");
+        System.out.println("За 3 дня машина произвела "+bottleMinute * treeDays+" штук бутылок.");
+        System.out.println("За 1 месяц машина произвела "+bottleMinute * oneMonth+" штук бутылок.");
         System.out.println(" ");
         System.out.println("Задача 5");
         System.out.println(" ");
         byte cans = 120;
         byte cansWhite = 2;
         byte cansBrown = 4;
-        System.out.println("В школе, где "+cans/(cansWhite+cansBrown)+" классов, нужно "+(cans/(cansWhite+cansBrown))*cansWhite+" банок белой краски и "+(cans/(cansWhite+cansBrown))*cansBrown+" банок коричневой краски.");
+        System.out.println("В школе, где "+cans / (cansWhite + cansBrown)+" классов, нужно "+(cans/(cansWhite + cansBrown)) * cansWhite+" банок белой краски и "+(cans/(cansWhite+cansBrown))*cansBrown+" банок коричневой краски.");
         System.out.println(" ");
         System.out.println("Задача 6");
         System.out.println(" ");
@@ -71,7 +71,7 @@ public class Main {
         byte egg = 4;
         byte weightEgg = 70;
         float kG = (weightBanana * bananas + milk * portionMilk + iceCream * weightIceCream + egg * weightEgg)/1000F;
-        System.out.println("Вес завтрака составляет "+(bananas*weightBanana+milk*portionMilk+iceCream*weightIceCream+egg*weightEgg)+" грамм, или "+kG+" килограмм.");
+        System.out.println("Вес завтрака составляет "+(bananas * weightBanana + milk * portionMilk + iceCream * weightIceCream + egg * weightEgg)+" грамм, или "+kG+" килограмм.");
         System.out.println(" ");
         System.out.println("Задача 7");
         System.out.println(" ");
@@ -79,9 +79,9 @@ public class Main {
         short weightOne = 250;
         short weightTwo = 500;
         short weightAllGr = (short) (weightAllKG*1000);
-        System.out.println(weightAllGr/weightOne+" дней необходимо, при похудении на "+weightOne+" граммов в день.");
-        System.out.println(weightAllGr/weightTwo+" дней необходимо, при похудении на "+weightTwo+" граммов в день.");
-        System.out.println((weightAllGr/weightOne+weightAllGr/weightTwo)/2+" дней необходимо в среднем для похудения");
+        System.out.println(weightAllGr / weightOne+" дней необходимо, при похудении на "+weightOne+" граммов в день.");
+        System.out.println(weightAllGr / weightTwo+" дней необходимо, при похудении на "+weightTwo+" граммов в день.");
+        System.out.println((weightAllGr / weightOne + weightAllGr / weightTwo) / 2+" дней необходимо в среднем для похудения");
         System.out.println(" ");
         System.out.println("Задание 8");
         System.out.println(" ");
@@ -90,9 +90,9 @@ public class Main {
         int Kristina = 76230;
         float percent = 10/100f;
         byte year =12;
-        System.out.println("Маша теперь получает "+(Masha + (Masha*percent))+" рублей. Годовой доход вырос на "+Masha*percent*year+" рублей.");
-        System.out.println("Денис теперь получает "+(Denis + (Denis*percent))+" Рублей. Годовой доход вырос на "+Denis*percent*year+" рублей.");
-        System.out.println("Кристина теперь получает "+(Kristina + (Kristina*percent))+" рублей. Годовой доход звырос на "+Kristina*percent*year+" рублей.");
+        System.out.println("Маша теперь получает "+(Masha + (Masha*percent))+" рублей. Годовой доход вырос на "+Masha * percent*year+" рублей.");
+        System.out.println("Денис теперь получает "+(Denis + (Denis*percent))+" Рублей. Годовой доход вырос на "+Denis * percent*year+" рублей.");
+        System.out.println("Кристина теперь получает "+(Kristina + (Kristina*percent))+" рублей. Годовой доход звырос на "+Kristina * percent * year+" рублей.");
 
     }
 }
