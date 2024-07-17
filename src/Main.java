@@ -94,5 +94,6 @@ public class Main {
         System.out.println("Денис теперь получает "+(Denis + (Denis*percent))+" Рублей. Годовой доход вырос на "+Denis * percent*year+" рублей.");
         System.out.println("Кристина теперь получает "+(Kristina + (Kristina*percent))+" рублей. Годовой доход звырос на "+Kristina * percent * year+" рублей.");
 
+
     }
 }
