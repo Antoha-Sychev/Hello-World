@@ -7,6 +7,7 @@ public class Main {
 
         if (age < 18) {
             System.out.println("Ты не можешь водить");
+
         }
     }
 }
