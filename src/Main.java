@@ -6,9 +6,9 @@ public class Main {
             int years = 18;
         if (years >= 18) {
             System.out.println("Если возраст человека равен 18 или больше лет, он совершеннолетний.");
-
-        int years1 = 17;
-        if (years1 < 18 )
+        }
+            int years1 = 17;
+        if (years1 < 18 ){
             System.out.println("Если возраст человека не равен 18 или меньше лет, он не достиг совершеннолетия, нужно немного подождать");
         }
 
@@ -84,9 +84,12 @@ public class Main {
         int two = 2;
         int three = 3;
         if (three > two && one < three) {
-            System.out.println("Число 3 большее");
+            System.out.println("Наибольшее число " + three);
+        } else if (one > three){
+            System.out.println("Набиольшее число " + one);
         } else {
-            System.out.println("Число 3 является средним или наименьшим");
+            System.out.println("Наибольшее число " + two);
         }
+
     }
 }
