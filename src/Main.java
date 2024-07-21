@@ -55,7 +55,36 @@ public class Main {
 
         // Задача 5
 
+        int age5 = 3;
+        if (age5 < 5) {
+            System.out.println("Если возраст ребенка равен 3-м годам, то он не может кататься на аттракционе.");
+        }
+        int age6 = 13;
+        if (age6 > 5 && age6 < 14) {
+            System.out.println("Если возраст ребенка равен 13 годам, то он может кататься только в сопровождении взрослого.");
+        }
+        int age7 = 21;
+        if (age7 > 14) {
+            System.out.println("Если возраст ребенка равен 21 году, то он может кататься без сопровождения взрослого.");
+        }
 
+        // Задача 6
 
+        int peopleSitting = 54;
+        int peopleStanding = 41;
+        if (peopleSitting < 60 || peopleStanding < 42) {
+            System.out.println("В вагоне есть сидячие или стоячие места");
+        } else {
+            System.out.println("Вагон полостью забит");
+        }
+
+        // Задача 7
+
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        if (three > two && one < three) {
+            System.out.println("");
+        }
     }
 }
