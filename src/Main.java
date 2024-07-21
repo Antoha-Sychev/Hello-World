@@ -84,7 +84,9 @@ public class Main {
         int two = 2;
         int three = 3;
         if (three > two && one < three) {
-            System.out.println("");
+            System.out.println("Число 3 большее");
+        } else {
+            System.out.println("Число 3 является средним или наименьшим");
         }
     }
 }
