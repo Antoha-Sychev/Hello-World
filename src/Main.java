@@ -37,5 +37,7 @@ public class Main {
                     break;
             }
         }
+        // Задание 3
+
     }
 }
