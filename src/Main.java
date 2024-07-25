@@ -2,22 +2,14 @@ import org.w3c.dom.ls.LSOutput;
 
 public class Main {
     public static void main(String[] args) {
-       char color = 'l';
-       switch (color) {
-           case 'r':
-               System.out.println("Красный! Ехать нельзя.");
-               break;
-           case 'y':
-               System.out.println("Желтый. Внимание.");
-               break;
-           case 'g':
-               System.out.println("Зеленый! Проезд разрешен.");
-               break;
-           case 'l':
-               System.out.println("Поворот налево.");
-               break;
-           default:
-               System.out.println("Светофор сломался.");
-       }
+      char clientOS = '1';
+      switch (clientOS) {
+          case '1':
+              System.out.println("Установите версию приложения для Android по ссылке");
+              break;
+          case '0':
+              System.out.println("Установите версию приложения для iOS по ссылке");
+              break;
+      }
     }
 }
