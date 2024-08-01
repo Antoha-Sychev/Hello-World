@@ -38,6 +38,32 @@ public class Main {
             }
         }
         // Задание 3
+        int year = 2023;
+        if (year < 1584) {
+        System.out.println("Год не является високосным");
+        } else {
+            if ((year % 4 == 0 && year % 100 > 0)|| year % 400 == 0){
+                System.out.println("Год является високосным");
+            } else {
+                System.out.println("Год не является високосным");
+            }
+        }
+        // Задача 4
+        int deliveryDistance = 950;
+         int days;
+         if(deliveryDistance <= 20){
+             days = 1;
+             System.out.println("Потребуется дней: "+days);
+         } else if (deliveryDistance > 20 && deliveryDistance < 60){
+             days = 2;
+             System.out.println("Потребуется дней: "+days);
+         } else if (deliveryDistance > 60 && deliveryDistance < 100){
+             days = 3;
+             System.out.println("Потребуется дней: "+days);
+         }else{
+             System.out.println("Доставка невозможна");
+         }
 
     }
+
 }
