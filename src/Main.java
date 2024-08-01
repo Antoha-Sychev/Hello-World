@@ -4,12 +4,12 @@ public class Main {
     public static void main(String[] args) {
         // Заданеи 1
         {
-            char clientOS = '1';
+            int clientOS = 1;
             switch (clientOS) {
-                case '1':
+                case 1:
                     System.out.println("Установите версию приложения для Android по ссылке");
                     break;
-                case '0':
+                case 0:
                     System.out.println("Установите версию приложения для iOS по ссылке");
                     break;
             }
@@ -18,18 +18,18 @@ public class Main {
         // Задание 2
 
         {
-            char clientOS = '1';
-            int age = 2018;
-            switch (clientOS) {
-                case '1':
-                    if (age > 2015) {
+            int clientDeviceYear = 1;
+            int productionYear = 2018;
+            switch (clientDeviceYear) {
+                case 1:
+                    if (productionYear > 2015) {
                         System.out.println("Установите полную версию для Android по ссылке");
                     } else {
                         System.out.println("Установите облегченную версию для Android по ссылке");
                     }
                     break;
-                case '0':
-                    if (age > 2015) {
+                case 0:
+                    if (productionYear > 2015) {
                         System.out.println("Установите полную версию приложения для iOS по ссылке");
                     } else {
                         System.out.println("Установите облегченную версию приложения для iOS по ссылке");
