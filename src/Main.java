@@ -5,11 +5,11 @@ import java.sql.SQLOutput;
 public class Main {
     public static void main(String[] args) {
         // Task 1
-        int deosit = 15000;
+        int deposit = 15000;
         int annualSavings = 0;
         int i = 0;
         while ( annualSavings < 2_459_000) {
-            annualSavings = deosit + annualSavings;
+            annualSavings = deposit + annualSavings;
             i++;
                 System.out.println("Месяц " + i + " Итого " + annualSavings );
             }
