@@ -50,16 +50,14 @@ public class Main {
         int annualSavingsInPercent = 0;
         for (int i = 1; i < 13; i++){
             annualSavingsInPercent = annualSavingsInPercent + annualSavingsInPercent / 100;
-            annualSavingsInPercent = deposits + annualSavingsInPercent;
+            annualSavingsInPercent = deposits + annualSavingsInPercent + annualSavingsInPercent / 100;
             System.out.println("Месяц " + i + ", сумма накомплений равна " + annualSavingsInPercent + " рублей");
         }
         System.out.println("");
         // Задача 10
-        int ii = 0;
-        int total = 0;
+
         for ( int i = 1 ; i < 11; i++ ){
-            total = ii + i * 2;
-            System.out.println(total);
+            System.out.println(2 * i);
         }
     }
 }
