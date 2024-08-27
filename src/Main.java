@@ -1,78 +1,101 @@
 public class Main {
     public static void main(String[] args) {
+        // Task 1
 
-        // Задача 1
-
-            int years = 17;
-        if (years >= 18) {
-            System.out.println("Если возраст человека "+ years +" лет, он совершеннолетний.");
-        }else{
-            System.out.println("Если возраст человека "+ years +" лет, он не достиг совершеннолетия, нужно немного подождать");
+        int deposit = 15000;
+        int annualSavings = 0;
+        int i = 0;
+        while (annualSavings < 2_459_000) {
+            annualSavings = deposit + annualSavings;
+            i++;
+            System.out.println("Месяц " + i + " Итого " + annualSavings);
         }
+        System.out.println(" ");
 
-        // Задача 2
+        // Task 2
 
-        int temperature = 19;
-        if (temperature < 5) {
-            System.out.println("На улице "+ temperature +" градус, нужно надеть шапку.");
-        }else {
-            System.out.println("На улице "+ temperature +" градусов, можно идти без шапки.");
+        int ii = 0;
+        while (ii < 10) {
+            ii++;
+            System.out.print(ii + " ");
         }
-
-        // Задача 3
-
-        int speed = 61;
-        if (speed <= 60) {
-            System.out.println("Если скорость "+ speed +" км/ч, можно ездить спокойнно.");
-        }else{
-            System.out.println("Если скорость "+ speed +" км/ч, то придется заплатить штраф.");
+        System.out.println(" ");
+        int io = 10;
+        for (; io > 0; io--) {
+            System.out.print(io + " ");
         }
+        System.out.println(" ");
+        System.out.println(" ");
 
-        // Задача 4
+        // Task 3
 
-        int age1 = 40;
-        if (age1 > 2 && age1 < 6) {
-            System.out.println("Если возраст человека равен "+ age1 +" годам, то ему нужно ходить в детский сад");
-        }else if (age1 > 7 && age1 < 17) {
-            System.out.println("Если возраст человека равен "+ age1 +" лет, то ему нужно ходить в школу");
-        }else if (age1 >= 18 && age1 <= 24) {
-            System.out.println("Если возраст человека равен "+ age1 +" лет, то его место в университете");
-        }else {
-            System.out.println("Если возраст человека составляет "+ age1 +" лет, то ему пора ходить на работу");
+        int populationSize = 12_000_000;
+        int birthRate = 17;
+        int mortalityRate = 8;
+        int byTheNumberOf = 1000;
+        for (i = 1; i < 11; i++) {
+            populationSize = (((populationSize * (birthRate - mortalityRate)) / byTheNumberOf) + populationSize);
+            System.out.println("Год " + i + ", численнссть населения составляет " + populationSize);
         }
+        System.out.println(" ");
 
-        // Задача 5
+        // Task 4
 
-        int age = 30;
-        if (age < 5) {
-            System.out.println("Если возраст ребенка равен "+ age +" года, то он не может кататься на аттракционе.");
-        } else if (age > 5 && age < 14) {
-            System.out.println("Если возраст ребенка равен "+ age +" лет, то он может кататься только в сопровождении взрослого.");
-        }else {
-            System.out.println("Если возраст ребенка равен "+ age +" лет, то он может кататься без сопровождения взрослого.");
+        int deposits = 15000;
+        int theAmountOfSavings = 0;
+        int percent = 7;
+        for (i = 0; theAmountOfSavings < 12_000_000; i++) {
+            theAmountOfSavings = theAmountOfSavings + theAmountOfSavings / 100 * percent;
+            theAmountOfSavings = theAmountOfSavings + deposits + theAmountOfSavings / 100 * percent;
+            System.out.println("Месяц " + i + ", сумма накомлений " + theAmountOfSavings);
         }
+        System.out.println("");
 
-        // Задача 6
+        // Task 5
+        int theAmountOfSavings2 = 0;
 
-        int peopleSitting = 54;
-        int peopleStanding = 41;
-        if (peopleSitting < 60 || peopleStanding < 42) {
-            System.out.println("В вагоне есть сидячие или стоячие места");
-        } else {
-            System.out.println("Вагон полостью забит");
+        for (i = 0; theAmountOfSavings2 < 12_000_000; i++) {
+            theAmountOfSavings2 = theAmountOfSavings2 + theAmountOfSavings2 / 100 * percent;
+            theAmountOfSavings2 = theAmountOfSavings2 + deposits + theAmountOfSavings2 / 100 * percent;
+            if (i % 6 == 0){
+        System.out.println("Месяц " + i + ", сумма накомлений " + theAmountOfSavings2);
+            }
+
         }
+        System.out.println(" ");
 
-        // Задача 7
+        // Task 6
 
-        int one = 1;
-        int two = 2;
-        int three = 3;
-        if (three > two && one < three) {
-            System.out.println("Наибольшее число " + three);
-        } else if (one > three){
-            System.out.println("Набиольшее число " + one);
-        } else {
-            System.out.println("Наибольшее число " + two);
+        long theAmountOfSavings3 = 0L;
+        for (i = 0; i < 109; i++) {
+            theAmountOfSavings3 = theAmountOfSavings3 + theAmountOfSavings3 / 100 * percent;
+            theAmountOfSavings3 = theAmountOfSavings3 + deposits + theAmountOfSavings3 / 100 * percent;
+            if (i % 6 == 0){
+                System.out.println("Месяц " + i + ", сумма накомлений " + theAmountOfSavings3);
+            }
+
+        }
+        System.out.println(" ");
+
+        // Task 7
+
+        int day = 7;
+        for (i = 1; i < 31; i++) {
+            day = day + i;
+            if (i % 7 == 0){
+                System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
+            }
+        }
+        System.out.println(" ");
+
+        // Task 8
+
+        int yearsLater = 79;
+        for (i = 1800; i < 2100; i++){
+            yearsLater = yearsLater + i;
+            if (i % 79 == 0){
+                System.out.println(i);
+            }
         }
 
     }
