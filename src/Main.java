@@ -56,7 +56,7 @@ public class Main {
         // Task 4
 
         for ( int i = 0; i < 3; i++){
-            weight [i] = (i | 1) + 1;
+            weight [i] = (i | 1) + 1 ;
             System.out.print(weight[i] + ", ");
         }
     }
