@@ -79,7 +79,24 @@ public class Main {
 
         // Task 7
 
+        int day = 7;
+        for (i = 1; i < 31; i++) {
+            day = day + i;
+            if (i % 7 == 0){
+                System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
+            }
+        }
+        System.out.println(" ");
 
+        // Task 8
+
+        int yearsLater = 79;
+        for (i = 1800; i < 2100; i++){
+            yearsLater = yearsLater + i;
+            if (i % 79 == 0){
+                System.out.println(i);
+            }
+        }
 
     }
 }
