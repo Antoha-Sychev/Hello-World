@@ -15,6 +15,7 @@ public class Main {
         weightLong[1] = 12856926894222L;
         weightLong[2] = 1294982579852L;
         System.out.println(" ");
+        System.out.println(" ");
 
         // Task 2
 
@@ -22,16 +23,41 @@ public class Main {
             System.out.print(weight[i]+", ");
         }
         System.out.println(" ");
-        System.out.println(" ");
 
         for (int i = 0; i < 3; i++){
             System.out.print(fractions[i] + ", ");
         }
         System.out.println(" ");
-        System.out.println(" ");
 
         for (int i = 0; i < 12; i++) {
             System.out.print(weightLong[i]+", ");
+        }
+        System.out.println(" ");
+        System.out.println(" ");
+
+        // Task 3
+
+        for (int i = 2; i > -1; i--) {
+            System.out.print(weight[i] + ", ");
+        }
+        System.out.println(" ");
+
+        for (int i = 2; i > -1; i--) {
+            System.out.print(fractions[i] + ", ");
+        }
+        System.out.println(" ");
+
+        for (int i = 2; i > -1; i--) {
+            System.out.print(weightLong[i] + ", ");
+        }
+        System.out.println(" ");
+        System.out.println(" ");
+
+        // Task 4
+
+        for ( int i = 0; i < 3; i++){
+            weight [i] = (i | 1) + 1;
+            System.out.print(weight[i] + ", ");
         }
     }
 }
