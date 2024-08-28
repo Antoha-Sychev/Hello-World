@@ -7,6 +7,10 @@ public class Main {
         weight[0] = 1;
         weight[1] = 2;
         weight[2] = 3;
+        weight[3] = 4;
+        weight[4] = 5;
+        weight[5] = 6;
+        weight[6] = 7;
 
         double [] fractions = {1.57, 7.654, 9.986};
 
@@ -56,8 +60,8 @@ public class Main {
 
         // Task 4
 
-        for ( int i = 0; i < 3; i++){
-           if (weight[i] != 2) {
+        for ( int i = 0; i < 12; i++){
+           if (weight[i] % 2 == 1) {
                weight[i] = weight[i] + 1;
            }
             System.out.print(weight[i] + ", ");
