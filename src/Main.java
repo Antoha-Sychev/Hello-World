@@ -32,6 +32,7 @@ public class Main {
         for (int i = 0; i < 12; i++) {
             System.out.print(weightLong[i]+", ");
         }
+
         System.out.println(" ");
         System.out.println(" ");
 
@@ -56,7 +57,9 @@ public class Main {
         // Task 4
 
         for ( int i = 0; i < 3; i++){
-            weight [i] = (i | 1) + 1 ;
+           if (weight[i] != 2) {
+               weight[i] = weight[i] + 1;
+           }
             System.out.print(weight[i] + ", ");
         }
     }
