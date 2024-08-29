@@ -1,49 +1,50 @@
 public class Main {
     public static void main(String[] args) {
 
-        int[] rack = new int [10];
-        rack [0] = 12;
-        rack [1] = 9;
-        rack [2] = 11;
-        rack [3] = 10;
+        // Task 1
 
-        int[] rack2 = new int [10];
-        rack2 [0] = 12;
-        rack2 [1] = 9;
-        rack2 [2] = 11;
-        rack2 [3] = 10;
+        double spendingSum = 0;
+        int [] spending = new int [5];
+        spending[0] = 45647;
+        spending[1] = 63654;
+        spending[2] = 23456;
+        spending[3] = 76543;
+        spending[4] = 19859;
+        for (int i = 0; i < 5; i++) {
+            spendingSum = spendingSum + spending[i];
+        }
+        System.out.println("Сумма трат за месяц составила " + spendingSum + " рублей.");
 
-        boolean rackAreEqual = true;
-        rackAreEqual = rack.length == rack2.length;
+        System.out.println(" ");
 
-        if (rackAreEqual) {
-            for (int i = 0; i < rack.length; i++) {
-                if (rack[i] != rack2[i]) {
-                    rackAreEqual = false;
-                }
-            }
-        }
-        if (rackAreEqual) {
-            System.out.println("Стеллажи одинаковые");
-        } else {
-            System.out.println("Стеллажи разные");
-        }
-        int[] weights = {90, 91, 93, 92, 85, 87, 88, 89, 0, 0, 0, 0};
-        int[] weightsCopy = {90, 91, 93, 92, 85, 87, 88, 89, 0, 0, 0, 0};
+        // Task 2
 
-        boolean arraysAreEqual = true;
-        arraysAreEqual = weights.length == weightsCopy.length;
-        if (arraysAreEqual) {
-            for (int i = 0; i < weights.length; i++) {
-                if (weights[i] != weightsCopy[i]) {
-                    arraysAreEqual = false;
-                }
-            }
+        int weeks = 4;
+        double min = spending[0];
+        double max = spending[0];
+        for (int i = 1; i < spending.length; i++) {
+            if (spending[i] > max) max = spending[i];
+               else if(spending[i] < min) min = spending[i];
         }
-        if (arraysAreEqual) {
-            System.out.println("Массивы одинаковые");
-        } else {
-            System.out.println("Массивы разные");
+        System.out.println("Минимальная сумма трат за неделю составила " + min / weeks );
+        System.out.println("Максимальная сумма трат за неделю составила " + max / weeks );
+
+        System.out.println(" ");
+
+        // Task 3
+
+        System.out.println("Средняя сумма трат за месяц составила " + spendingSum / weeks + " рублей.");
+
+        System.out.println(" ");
+
+        // Task 4
+
+        char[] reversFullName = {'n','a','v','I',' ','v','o','n','a','v','I'};
+        for (int i = reversFullName.length - 1; i > -1; i--) {
+            System.out.print(reversFullName[i]);
         }
+
+
+
     }
 }
