@@ -23,11 +23,15 @@ public class Main {
         double min = spending[0];
         double max = spending[0];
         for (int i = 1; i < spending.length; i++) {
-            if (spending[i] > max) max = spending[i];
-               else if(spending[i] < min) min = spending[i];
+            if (spending[i] > max){
+            max = spending[i];
+            }
+               else if(spending[i] < min){
+                   min = spending[i];
+               }
         }
-        System.out.println("Минимальная сумма трат за неделю составила " + min / weeks );
-        System.out.println("Максимальная сумма трат за неделю составила " + max / weeks );
+        System.out.println("Минимальная сумма трат за неделю составила " + min );
+        System.out.println("Максимальная сумма трат за неделю составила " + max );
 
         System.out.println(" ");
 
