@@ -3,68 +3,51 @@ public class Main {
 
         // Task 1
 
-        int [] weight = new int [12];
-        weight[0] = 1;
-        weight[1] = 2;
-        weight[2] = 3;
-        weight[3] = 4;
-        weight[4] = 5;
-        weight[5] = 6;
-        weight[6] = 7;
 
-        double [] fractions = {1.57, 7.654, 9.986};
+        double spendingSum = 0;
+        int [] spending = new int [5];
+        spending[0] = 45647;
+        spending[1] = 63654;
+        spending[2] = 23456;
+        spending[3] = 76543;
+        spending[4] = 19859;
+        for (int i = 0; i < 5; i++) {
+            spendingSum = spendingSum + spending[i];
+        }
+        System.out.println("Сумма трат за месяц составила " + spendingSum + " рублей.");
 
-        long [] weightLong = new long [12];
-        weightLong[0] = 1894982579852L;
-        weightLong[1] = 12856926894222L;
-        weightLong[2] = 1294982579852L;
-        System.out.println(" ");
         System.out.println(" ");
 
         // Task 2
 
-        for (int i = 0; i < 12; i++) {
-            System.out.print(weight[i]+", ");
+        int weeks = 4;
+        double min = spending[0];
+        double max = spending[0];
+        for (int i = 1; i < spending.length; i++) {
+            if (spending[i] > max){
+            max = spending[i];
+            }
+               else if(spending[i] < min){
+                   min = spending[i];
+               }
         }
-        System.out.println(" ");
+        System.out.println("Минимальная сумма трат за неделю составила " + min );
+        System.out.println("Максимальная сумма трат за неделю составила " + max );
 
-        for (int i = 0; i < 3; i++){
-            System.out.print(fractions[i] + ", ");
-        }
-        System.out.println(" ");
-
-        for (int i = 0; i < 12; i++) {
-            System.out.print(weightLong[i]+", ");
-        }
-
-        System.out.println(" ");
         System.out.println(" ");
 
         // Task 3
 
-        for (int i = 2; i > -1; i--) {
-            System.out.print(weight[i] + ", ");
-        }
-        System.out.println(" ");
+        System.out.println("Средняя сумма трат за месяц составила " + spendingSum / weeks + " рублей.");
 
-        for (int i = 2; i > -1; i--) {
-            System.out.print(fractions[i] + ", ");
-        }
-        System.out.println(" ");
-
-        for (int i = 2; i > -1; i--) {
-            System.out.print(weightLong[i] + ", ");
-        }
-        System.out.println(" ");
         System.out.println(" ");
 
         // Task 4
 
-        for ( int i = 0; i < 12; i++){
-           if (weight[i] % 2 == 1) {
-               weight[i] = weight[i] + 1;
-           }
-            System.out.print(weight[i] + ", ");
+        char[] reversFullName = {'n','a','v','I',' ','v','o','n','a','v','I'};
+        for (int i = reversFullName.length - 1; i > -1; i--) {
+            System.out.print(reversFullName[i]);
+
         }
     }
 }
