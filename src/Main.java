@@ -15,6 +15,7 @@ public class Main {
 
         System.out.println(deliveryDistance);
     }
+  
     // Task 1
 
     public static void isYearLeap(int year){
@@ -23,7 +24,7 @@ public class Main {
         }else{
             System.out.println(year + " год не високосный");
         }
-        }
+   }
 
     // Task 2
 
@@ -60,5 +61,6 @@ public class Main {
             deliveryTime = -1;
         }
         return deliveryTime;
+
     }
 }
