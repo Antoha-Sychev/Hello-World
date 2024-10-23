@@ -2,9 +2,18 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
+
         isYearLeap(2025);
 
+        System.out.println(" ");
+
         checkApplicationVersion(1, 2019);
+
+        System.out.println(" ");
+
+        int deliveryDistance = calculateDeliveryTime(95);
+
+        System.out.println(deliveryDistance);
     }
     // Task 1
 
@@ -34,5 +43,22 @@ public class Main {
                 System.out.println("Установите обычную версию приложения для Android по ссылке");
             }
         }
+    }
+
+    // Task 3
+
+    public static int calculateDeliveryTime(int distance){
+        int deliveryTime;
+
+        if (distance <= 20){
+            deliveryTime = 1;
+        }else if (distance > 20 && distance <= 60){
+            deliveryTime = 2;
+        }else if (distance > 60 && distance <= 100){
+            deliveryTime = 3;
+        }else{
+            deliveryTime = -1;
+        }
+        return deliveryTime;
     }
 }
