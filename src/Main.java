@@ -28,7 +28,7 @@ public class Main {
     // Task 2
 
     public static void checkApplicationVersion (int os, int clientDeviceYear){
-        int currentYear = LocalDate.now().getYear();
+        int currentYear = 2015;
 
         if (os == 0) {
             if (clientDeviceYear <= currentYear){
