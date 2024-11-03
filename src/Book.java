@@ -25,7 +25,5 @@ public class Book {
     }
     public void setYearOfPublication(int yearOfPublication) {
         this.yearOfPublication = yearOfPublication;
-
     }
-
 }

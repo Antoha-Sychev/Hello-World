@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        // Book 1
+            // Book 1
 
         Author authorOne = new Author("Пауло", "Коэльо");
 
@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Год публикации: " + bookOne.getYearOfPublication());
         System.out.println(" ");
 
-        // Book 2
+            // Book 2
 
         Author authorTwo = new Author("Антон", "Чехов");
 
@@ -28,4 +28,3 @@ public class Main {
 
     }
 }
-
