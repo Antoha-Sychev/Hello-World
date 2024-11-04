@@ -1,67 +1,30 @@
-import java.time.LocalDate;
-
 public class Main {
     public static void main(String[] args) {
 
-        isYearLeap(2025);
+            // Book 1
 
+        Author authorOne = new Author("Пауло", "Коэльо");
+
+        Book bookOne = new Book("Частичка Мира", authorOne, 2024);
+
+        bookOne.setYearOfPublication(1999);
+
+        System.out.println("Название книги: " + bookOne.getNameBook());
+        System.out.println("Автор книги: " + authorOne.getAuthorName());
+        System.out.println("Год публикации: " + bookOne.getYearOfPublication());
         System.out.println(" ");
 
-        checkApplicationVersion(1, 2019);
+            // Book 2
 
-        System.out.println(" ");
+        Author authorTwo = new Author("Антон", "Чехов");
 
-        int deliveryDistance = calculateDeliveryTime(95);
+        Book bookTwo = new Book("Палата", authorTwo, 2024);
 
-        System.out.println(deliveryDistance);
-    }
-  
-    // Task 1
+        bookTwo.setYearOfPublication(1892);
 
-    public static void isYearLeap(int year){
-        if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
-            System.out.println(year + " год високосный");
-        }else{
-            System.out.println(year + " год не високосный");
-        }
-   }
-
-    // Task 2
-
-    public static void checkApplicationVersion (int os, int clientDeviceYear){
-        int currentYear = 2015;
-
-        if (os == 0) {
-            if (clientDeviceYear <= currentYear){
-                System.out.println("Установите облегченную версию приложения для IOS по ссылке");
-            }else{
-                System.out.println("Установите обычную версию приложения для IOS по ссылке");
-            }
-        }else if (os == 1){
-            if (clientDeviceYear <= currentYear){
-                System.out.println("Установите облеченную версию приложения для Android по ссылке");
-            }else{
-                System.out.println("Установите обычную версию приложения для Android по ссылке");
-            }
-        }
-    }
-
-
-    // Task 3
-
-    public static int calculateDeliveryTime(int distance){
-        int deliveryTime;
-
-        if (distance <= 20){
-            deliveryTime = 1;
-        }else if (distance > 20 && distance <= 60){
-            deliveryTime = 2;
-        }else if (distance > 60 && distance <= 100){
-            deliveryTime = 3;
-        }else{
-            deliveryTime = -1;
-        }
-        return deliveryTime;
+        System.out.println("Название книги: " + bookTwo.getNameBook());
+        System.out.println("Автор книги: " + authorTwo.getAuthorName());
+        System.out.println("Год публикации: " + bookTwo.getYearOfPublication());
 
     }
 }
